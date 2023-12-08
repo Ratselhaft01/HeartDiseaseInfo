@@ -52,7 +52,8 @@ nav ul li a:hover {
     cursor: pointer;
 }
 #what-is {
-    padding-top: 20%;
+    padding-top: 90px;
+    /* margin-top: 5%; */
 }
 
 /* Responsive styles */
