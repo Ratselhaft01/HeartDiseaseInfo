@@ -12,15 +12,6 @@ header {
     text-align: center;
     position: relative;
 }
-.menu-toggle {
-    display: none;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 24px;
-    color: #fff;
-    cursor: pointer;
-}
 nav {
     display: flex;
     justify-content: center;
@@ -43,6 +34,26 @@ nav ul li a {
 }
 nav ul li a:hover {
     color: #ffbf00;
+}
+
+.menu-toggle {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+.nav-links {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    display: none; /* Initially hide the nav links */
+}
+.nav-links.show {
+    display: block; /* Show the nav links when 'show' class is applied */
 }
 
 /* Responsive styles */
@@ -73,6 +84,11 @@ nav ul li a:hover {
     nav ul li {
         display: block;
         margin: 10px 0;
+    }
+
+    .video {
+        width: 350px;
+        height: 200px;
     }
 }
 

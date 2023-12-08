@@ -11,7 +11,7 @@
         <h1>Heart Disease Awareness</h1>
         <button class="menu-toggle">&#9776;</button>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#what-is">What is Heart Disease?</a></li>
                 <li><a href="#what-causes-it">What Causes It?</a></li>
                 <li><a href="#prevention">How Can It Be Prevented?</a></li>
@@ -29,8 +29,10 @@
         <section id="what-causes-it">
             <h2>What Causes It?</h2>
             <p>There are many things that can put an individual at risk for heart disease. One thing that makes a person more prone to heart disease is having risk factors for it. Risk factors that increase the chance of cardiovascular disease include having hypertension (high blood pressure), tobacco use, high cholesterol (the amount of fat in blood), family history of heart disease, type 2 diabetes, obesity, high alcohol intake, and a sedentary lifestyle. These things can cause heart problems by causing plaques to form on blood vessels (called arteriosclerosis which leads to coronary artery disease), causing the heart to work harder than it should for long periods of time, and by causing damage to vessels. There are things that individuals can do to help prevent themself from getting these risk factors and getting heart disease. </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/kTSLvkDgys8?si=ts5oCx8ii9t-NicG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </section>
+            <div class="video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kTSLvkDgys8?si=ts5oCx8ii9t-NicG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            </section>
 
         <section id="prevention">
             <h2>How Can It Be Prevented?</h2>
@@ -119,5 +121,15 @@
     <footer>
         <p>&copy; 2023 Heart Disease Awareness</p>
     </footer>
+
+    <script>
+        // JavaScript to toggle the mobile navigation
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
