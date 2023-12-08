@@ -8,9 +8,12 @@ body {
 header {
     background-color: #9d0505;
     color: #fff;
+    top: 0;
     padding: 20px;
+    padding-top: 10px;
     text-align: center;
-    position: relative;
+    position: fixed;
+    width: 100%
 }
 nav {
     display: flex;
@@ -35,25 +38,21 @@ nav ul li a {
 nav ul li a:hover {
     color: #ffbf00;
 }
-
+.video {
+    width: 750px;
+    height: 422px;
+}
 .menu-toggle {
     display: none;
     position: absolute;
     top: 20px;
     right: 20px;
     font-size: 24px;
-    color: #fff;
+    color: #fb0000;
     cursor: pointer;
 }
-.nav-links {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-    display: none; /* Initially hide the nav links */
-}
-.nav-links.show {
-    display: block; /* Show the nav links when 'show' class is applied */
+#what-is {
+    padding-top: 20%;
 }
 
 /* Responsive styles */
@@ -87,8 +86,18 @@ nav ul li a:hover {
     }
 
     .video {
-        width: 350px;
-        height: 200px;
+        width: 300px;
+        height: 169px;
+    }
+    .nav-links {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+        display: none; /* Initially hide the nav links */
+    }
+    .nav-links.show {
+        display: block; /* Show the nav links when 'show' class is applied */
     }
 }
 
